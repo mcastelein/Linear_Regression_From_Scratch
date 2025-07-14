@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import streamlit as st
 from scipy.stats import t
 
-@st.cache
+@st.cache_data
 def load_data():
     diabetes = load_diabetes()
     X = pd.DataFrame(diabetes.data, columns=diabetes.feature_names)
